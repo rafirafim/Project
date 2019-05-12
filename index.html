@@ -1,0 +1,636 @@
+<html>
+<title>Food Resto</title>
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+
+    <div class="head">
+        <table>
+            <tbody>
+                <tr>
+                    <td><img src="image/logo1.png" style="width:50px;height:90px;margin-left: 15px"></td>
+                    <td
+                        style="width: 150px;padding-left: 30px;padding-top: 10px;color:white;font-family:Sans-serif Bold;">
+                        <h2>F O O D <br>R E S T O</h2>
+                    </td>
+
+                    <td style="padding-left: 800px;">
+                        <p id="demo"style="width:70px;height:20px;"></p>
+                        <div class="cart"> Cart [0] </div>
+
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div><br><br><br><br><br>
+
+    <div class="main">
+
+        <!-- Content -->
+        <div class="Content">
+            <!-- display -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <!-- table -->
+
+                    <table style="margin:auto;">
+                        <tbody>
+                            <tr style="background-color: #ffffff;">
+                                <td class="sel">Item</td>
+                                <td class="sel1">Rate</td>
+                                <td class="sel1">Quantity</td>
+                                <td class="sel1"></td>
+                            </tr>
+                            <tr style="background-color: #efeddf;">
+                                <td class="sel">Item</td>
+                                <td class="sel1">210</td>
+                                <td class="sel1"></td>
+                                <td class="sel1"></td>
+                            </tr>
+                            <tr style="background-color: #ffffff;">
+                                <td class="sel">Item</td>
+                                <td class="sel1">330</td>
+                                <td class="sel1"></td>
+                                <td class="sel1"></td>
+                            </tr>
+                            <tr style="background-color: #efeddf;">
+                                <td class="sel">Item</td>
+                                <td class="sel1">100</td>
+                                <td class="sel1"></td>
+                                <td class="sel1"> <div class="itemadd" > Add</div> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+            <br><br>
+            <ex>
+                Exclusiives Of The Day
+            </ex>
+            <br><br>
+
+            
+            <div class="box" id="opbox" style="background-image: url(image/zamzam.png)">
+                <div class="cap">
+                    <table style="color: #ffffff;font-weight: bold;padding: 2px;">
+                        <tbody>
+                            <tr>
+                                <td width="260px">Zam Zam</td>
+                                <td>
+                                    <r>4.8 &#x2605;</r>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="box" style="background-image: url(image/irani.png)">
+                <div class="cap">
+                    <table style="color: #ffffff;font-weight: bold;padding: 2px;">
+                        <tbody>
+                            <tr>
+                                <td width="260px">Irani</td>
+                                <td>
+                                    <r>4.8 &#x2605;</r>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="box" style="background-image: url(image/LeArabia.png)">
+                <div class="cap">
+                    <table style="color: #ffffff;font-weight: bold;padding: 2px;">
+                        <tbody>
+                            <tr>
+                                <td width="260px">Le Arabia</td>
+                                <td>
+                                    <r>4.7 &#x2605;</r>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- user block -->
+            <div class="block">
+                <div class="sub1">
+                    <br><br>
+                    <!-- login -->
+                    <div class="child1">
+                        <div class="pan" id="login">
+                            Login
+                        </div>
+                        <div class="pan" id="register">
+                            Register
+                        </div>
+                    </div>
+                    <!-- Code for login and registration boxes -->
+                    <div class="child2">
+                        <div class="login1" id="loginChild">
+                            <form>
+                                <input type="text" placeholder="USERNAME" class="insty" name="user1" /><br>
+                                <input type="password" placeholder="PASSWORD" class="insty" name="pass" /><br>
+                                <br>
+                                <input class="bsty" type="Reset" value="Reset">
+                                <button class="bsty" onclick="logclick()">Login</button>
+                            </form>
+                        </div>
+                        <div class="registration1" id="registerChild">
+                            <form>
+                                <input type="text" placeholder="USERNAME" class="insty" name="user2" /><br>
+                                <input type="password" placeholder="PASSWORD" class="insty" name="pass" /><br>
+                                <input type="text" placeholder="MOBILE NUMBER" class="insty" name="mobile" /><br>
+                                <input class="bsty" type="Reset" value="Reset">
+                                <button class="bsty" onclick="regclick()">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="sub2">
+                    <br><br><Br>
+                    <!-- location -->
+                    <hloc>
+                        Enter your delivery location.
+                    </hloc>
+                    <br>
+                    <div class="search">
+
+                        <img src="image/loco.png" style="width:35px;height: 40px;margin-left: 5px;margin-top: -5px;">
+                        &nbsp; &nbsp;
+                        <input type="text" class="sea" placeholder="Type delivery location here"> &nbsp;
+                        &nbsp;
+                        <button class="detect"> <img src="image/icosea.png"
+                                style="margin-left:-15px;width:130px;height: 40px;"> </button>
+
+
+
+
+                    </div>
+                    <br>
+                    <br><br>
+
+                    <co> Use code <b> ORDER150</b> to get 50% OFF (up to ₹150) on first 5 orders. T&Cs apply. </co>
+
+
+                </div>
+            </div>
+            <!-- category --><br>
+            <div class="category" id="category">
+
+                <div class="cathead"> CATEGORY <button style="float:right" onclick="cat()"> > </button></div>
+
+                <br>
+                <div class="catbox">
+                    American
+                </div>
+                <div class="catbox">
+                    Arabian
+                </div>
+                <div class="catbox">
+                    Bakery
+                </div>
+                <div class="catbox">
+                    BBQ
+                </div>
+                <div class="catbox">
+                    Breakfast
+                </div>
+                <div class="catbox">
+                    Cafe
+                </div>
+                <div class="catbox">
+                    Chinese
+                </div>
+                <div class="catbox">
+                    European
+                </div>
+                <!-- second line -->
+                <br><br>
+                <div class="catbox">
+                    Ice Cream
+                </div>
+                <div class="catbox">
+                    Indian
+                </div>
+                <div class="catbox">
+                    Italian
+                </div>
+                <div class="catbox">
+                    Juice
+                </div>
+                <div class="catbox">
+                    North Indian
+                </div>
+                <div class="catbox">
+                    Pure Veg
+                </div>
+                <div class="catbox">
+                    Salads
+                </div>
+                <div class="catbox">
+                    South Indian
+                </div>
+
+
+
+            </div>
+
+            <!-- selection area -->
+
+            <div class="selection">
+                <!-- Line one -->
+                <!-- 1  -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/lf.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>LF Eats-Biriyani</w><br>
+                        <e> ₹ • Indian <br>
+                            <e></e><br>
+                            <div class="tab"> 15-20 min </div>
+                            <div class="tab">
+                                <r>4.1 &#x2605;</r>
+                            </div>
+                    </div>
+
+
+                </div>
+                <!-- 2 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/buraq.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Buraq</w><br>
+                        <e> ₹ • North Indian<br>
+                            <e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.2 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/iran.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Irani Poojapura</w><br>
+                        <e> ₹ • Chinese • North Indian<e></e><br>
+                            <div class="tab"> 30-40 min </div>
+                            <div class="tab">
+                                <r>4.0 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/azad.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Azad Restaurant </w><br>
+                        <e> ₹ • Indian <br>
+                            <e></e><br>
+                            <div class="tab"> 30-35 min </div>
+                            <div class="tab">
+                                <r>4.4 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Line 2 -->
+                <!-- 1  -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/Food.jpg" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Irani</w><br>
+                        <e> ₹ • Chinese • Indian • Arabian<e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.2 &#x2605;</r>
+                            </div>
+                    </div>
+
+                </div>
+                <!-- 2 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/kings.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Kings Restaurant</w><br>
+                        <e> ₹• North Indian • South Indian • Chinese • Italian<e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.6 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/impe.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Imperial Kitchen</w><br>
+                        <e> ₹ • Chinese • Indian • Arabian<e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.2 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/arabian.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Arabian Tasty Cafe</w><br>
+                        <e> ₹ •Indian • Arabian<br>
+                            <e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.2 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Line 3 -->
+                <!-- 1  -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/salwa.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Salwa Dine</w><br>
+                        <e> ₹ •North Indian • Arabian<e></e><br>
+                            <div class="tab"> 25-30 min </div>
+                            <div class="tab">
+                                <r>4.8 &#x2605;</r>
+                            </div>
+                    </div>
+
+                </div>
+                <!-- 2 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/sweet.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Sweet N Spicy</w><br>
+                        <e> ₹ • South Indian • Arabian <e></e><br>
+                            <div class="tab"> 30-35 min </div>
+                            <div class="tab">
+                                <r>4.5 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/mankalam.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Mankalam</w><br>
+                        <e> ₹ • Indian <br>
+                            <e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.2 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/mummu.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Mammuz Biriyani</w><br>
+                        <e> ₹ • North Indian • South Indian <e></e><br>
+                            <div class="tab"> 25-30 min </div>
+                            <div class="tab">
+                                <r>4.2 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Line 4 -->
+                <!-- 1  -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/steampot.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Steampot</w><br>
+                        <e> ₹ • Indian <br>
+                            <e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.0 &#x2605;</r>
+                            </div>
+                    </div>
+
+                </div>
+                <!-- 2 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/garam.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Garam Masala</w><br>
+                        <e> ₹ • Arabian • North Indian • Chinese<e></e><br>
+                            <div class="tab"> 50-55 min </div>
+                            <div class="tab">
+                                <r>4.2 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/narayan.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Narayana Bhavan</w><br>
+                        <e> ₹ • Indian <br>
+                            <e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.2 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/supreme.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Supreme Dhariya </w><br>
+                        <e> ₹ •Indian • Arabian<br>
+                            <e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.2 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Line 5 -->
+                <!-- 1  -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/rehm.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Rahmaniya-Kethal's</w><br>
+                        <e> ₹ • Indian • Arabian<e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.5 &#x2605;</r>
+                            </div>
+                    </div>
+
+                </div>
+                <!-- 2 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/noor.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Noor Mahal</w><br>
+                        <e> ₹ • Chinese • Indian • Arabian<e></e><br>
+                            <div class="tab"> 15-20 min </div>
+                            <div class="tab">
+                                <r>4.2 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/mojo.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Cafe Mojo</w><br>
+                        <e> ₹ • Chinese • Indian • Italian<e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.7 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="sbox">
+                    <div class="a1"><img src="image/iyer.png" class="imgsty"></div>
+                    <div class="a2"> <br>
+                        <w>Iyer's Kitchen</w><br>
+                        <e> ₹ • South Indian • North Indian • Vegetarian<e></e><br>
+                            <div class="tab"> 40-45 min </div>
+                            <div class="tab">
+                                <r>4.2 &#x2605;</r>
+                            </div>
+                    </div>
+                </div>
+
+
+                <!-- Footer -->
+
+
+            </div>
+            <div class="foot">
+               <br>
+               <div class="footblock">
+                    <h2>FOOD RESTO</h2>
+                  
+                    <hr>
+                    <br>
+                    <table>
+                        <tbody style="color:#ffffff;">
+                           <tr>
+                                <td style="width:400px;"><h3>About</h3>  </td><td style="width:400px;" > <h3>For Foodies</h3>  </td><td style="width:400px;"><h3>See all cities </h3> </td>
+                                
+                           </tr>
+                           <tr>
+                                <td style="width:400px;"><i>About Us</i>   </td><td style="width:400px;" ><i>Code of Conduct  </i> </td><td style="width:400px;"><i>Australia </i> </td>
+                                
+                           </tr>
+                           <tr>
+                                <td style="width:400px;"><i>Culture</i>   </td><td style="width:400px;" > <i>Verified Users  </i> </td><td style="width:400px;"><i>Brasil </i> </td>
+                                
+                           </tr>
+                           <tr>
+                                <td style="width:400px;"><i>Careers</i>   </td><td style="width:400px;" > <i> </i>  </td><td style="width:400px;"> <i>India </i> </td>
+                                
+                           </tr>
+                           <tr>
+                                <td style="width:400px;"><i>Contact</i>   </td><td style="width:400px;" > <i> </i> </td><td style="width:400px;"> <i>Italy </i> </td>
+                                
+                           </tr>
+                           <tr>
+                                <td style="width:400px;"><i></i>   </td><td style="width:400px;" > <i> </i> </td><td style="width:400px;"> <i>Sri Lanka  </i> </td>
+                                
+                           </tr>
+                           <tr>
+                                <td style="width:400px;"><i></i>   </td><td style="width:400px;" > <i> </i> </td><td style="width:400px;"> <i>United States  </i> </td>
+                                
+                           </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+
+                    
+
+               </div>
+                
+            </div>
+
+            <!-- script area -->
+
+            <script>
+                var login = document.getElementById('login');
+                var register = document.getElementById('register')
+                var loginChild = document.getElementById('loginChild');
+                var registerChild = document.getElementById('registerChild');
+
+                login.addEventListener('click', function () {
+                    loginChild.style.display = 'block';
+                    registerChild.style.display = 'none';
+                });
+
+                register.addEventListener('click', function () {
+                    loginChild.style.display = 'none';
+                    registerChild.style.display = 'block';
+                });
+
+
+                function logclick() {
+                    var username = document.forms[0].user1.value
+                    var logalert = "Hai, "
+                    logalert = logalert + document.forms[0].user1.value + ".\t\t\t\t\t\t\n"
+                    logalert = logalert + " You have sucsessfully loged in.\n  "
+                    alert("\t\t Welcome to FOOD RESTO \t\t \n\n\n " + logalert)
+                    document.getElementById("demo").innerHTML = 5 + 6;
+                }
+                function regclick() {
+                    var regname = document.forms[1].user2.value
+                    alert(" \t\t Welcome to FOOD RESTO \t\t \n\n\n Hai," + regname + "\n Congardulation...You are now a registared user.\n Your registared mobile number is :-" + document.forms[1].mobile.value)
+                }
+
+                // --------------------------
+
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("opbox");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal 
+                btn.onclick = function () {
+                    modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+                var cart=document.getElementById("category")
+                function cart()
+                {
+                cart.style.display = "none";
+                }
+            </script>
+</body>
+
+</html>
